@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="fogcloudproject:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/fogcloudproject_jar</output-path>
+    <root id="archive" name="fogcloudproject.jar">
+      <element id="module-output" name="fogcloudproject" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/json-simple-1.1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

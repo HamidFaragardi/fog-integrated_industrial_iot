@@ -1,0 +1,44 @@
+{
+  "vms":[
+    {
+      "no_cores":1,
+      "memory": 1048576,
+      "cost":0.0058
+    },
+    {
+      "no_cores":1,
+      "memory": 2097152,
+      "cost":0.023
+    },
+    {
+      "no_cores":2,
+      "memory": 4194304,
+      "cost":0.0464
+    },
+    {
+      "no_cores":4,
+      "memory": 16777216,
+      "cost":0.1856
+    },
+    {
+      "no_cores":2,
+      "memory": 8388608,
+      "cost":0.096
+    },
+    {
+      "no_cores":16,
+      "memory": 67108864,
+      "cost":0.768
+    },
+    {
+      "no_cores":2,
+      "memory": 4194304,
+      "cost":0.085
+    },
+    {
+      "no_cores":4,
+      "memory": 8388608,
+      "cost":0.17
+    }
+  ]
+}
