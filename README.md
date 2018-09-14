@@ -16,6 +16,7 @@ FEASIBLE Solution
 ```
 
 Fitness Value shows the total execution cost of applications if there is no penalty, otherwise, when there is a penalty, the fitness value is calculated according to equation `FITNESS = cloudCost + privateCloudCost + BETA1 * utilizationPenalty() + BETA2 * (MemoryPenalty + HardVmPenalty + CommunicationPenalty`
+
 ```Fitness --> 1029.9482```
 
 ```Number of Generated VMs --> 288```
