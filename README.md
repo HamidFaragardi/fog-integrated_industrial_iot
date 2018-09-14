@@ -11,7 +11,6 @@ Run with java command and select one of the benchmarks (Small, Medium or Large).
 #### Result
 If Honeybee Algorithm finds a feasible solution, it writes 'Feasible Solution' otherwise it prints 'Infeasible Solution' (At least one constraint is violated).
 ```
-
 FEASIBLE Solution
 ```
 
@@ -19,7 +18,9 @@ Fitness Value shows the total execution cost of applications if there is no pena
 
 ```Fitness --> 1029.9482```
 
-Numbers 0-9 corresponds fog nodes , c corresponds Cloud and pc corresponds Private Cloud. 
+Number 0 to 9 correspond fog nodes , 'c' correspond Cloud and 'pc' corresponds Private Cloud. 
+
+For example the first vm is assigned to fog node number 6 and the second vm is assigned to the Private cloud. 
 
 ```
 Allocation --> [6, pc, pc, 9, 6, 3, pc, 8, pc, pc, pc, 9, pc, pc, 3, 8, 7, pc, 4, pc, 1, pc, pc, pc, pc, pc, 4, pc, pc, 5, pc, 0, pc, 5, pc, pc, pc, pc, pc, pc, pc, 1, pc, pc, 9, pc, 4, pc, pc, pc, pc, pc, 5, pc, pc, 2, pc, pc, pc, 6, pc, pc, pc, pc, pc, pc, pc, 2, pc, pc, pc, pc, pc, pc, pc, pc, pc, pc, pc, pc, pc, pc, pc, pc, pc, 1, pc, pc, 7, pc, pc, pc, pc, pc, pc, pc, pc, pc, pc, pc, pc, pc, pc, pc, pc, 8, pc, pc, pc, pc, pc, pc, pc, pc, pc, pc, pc, pc, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, 9, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, 6, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c]
