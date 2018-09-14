@@ -596,9 +596,9 @@ public class FogCloudProject {
             printResult(fc, best);
 
             System.out.println("\n");
-            System.out.println("RESULT : " + Arrays.toString(result));
-            System.out.println("RESULT Random Fit : " + Arrays.toString(result2));
-            System.out.println("TIMES (MILLISEC) : " + Arrays.toString(extime));
+            System.out.println("Fitness of HoneyBee runs : " + Arrays.toString(result));
+            System.out.println("Fitness of Random Fit runs : " + Arrays.toString(result2));
+            System.out.println("Execution Times (MILLISEC) : " + Arrays.toString(extime));
 
             double sumResult = 0;
             double sumResult2 = 0;
@@ -610,9 +610,9 @@ public class FogCloudProject {
                 sumResult2 += result2[i];
             }
 
-            System.out.println("Average result: " + sumResult / iteration);
-            System.out.println("Average result Random Fit: " + sumResult2 / iteration);
-            System.out.println("Average time (MILLISEC) : " + sumtime / iteration);
+            System.out.println("Average Fitness of HoneyBee: " + sumResult / iteration);
+            System.out.println("Average Fitness of Random Fit: " + sumResult2 / iteration);
+            System.out.println("Average Execution Times (MILLISEC) : " + sumtime / iteration);
 
             ////// TODO : Simulated Anealing
 //                SimulatedAnealing sa = new SimulatedAnealing(number_of_fog_devices_except_local_servers + 2, vmArray.length(), fc2);
@@ -645,17 +645,19 @@ public class FogCloudProject {
     public static void printResult(FitnessCalculator fc, int[] best) {
         fc.calculateFitness(best);
         if (fc.utilPenalty + fc.memoryPenalty + fc.hardPenalty + fc.comPenalty == 0) {
-            System.out.println("FEASIBLE ANSWER");
+            System.out.println("Feasible Solution");
         } else {
-            System.out.println("INFEASIBLE ANSWER");
+            System.out.println("Infeasible Solution");
         }
         System.out.println("");
         System.out.println("Fitness --> " + fc.calculateFitness(best));
-        System.out.println("Number of VMs --> " + best.length);
+        System.out.println("Number Generated VMs --> " + best.length);
         System.out.println("Allocation --> " + Arrays.toString(best).replaceAll((FitnessCalculator.noFogDevices) + "", "pc").replaceAll((FitnessCalculator.noFogDevices) + 1 + "", "c"));
         System.out.println("");
         System.out.println("Cost Cloud --> " + fc.cloudCost());
         System.out.println("VM_CONSTANT_COST + VM_NETWORK_COST + Container_COST = Cost Cloud");
+        System.out.println("Instances on Cloud --> " + fc.containerReplacement.vmOnClouds.size());
+
         System.out.println(FitnessCalculator.VM_CONSTANT_COST + " + " + FitnessCalculator.VM_NETWORK_COST + " + " + fc.containerCost + " +  = " + fc.cloudCost());
         System.out.println("");
         System.out.println("Cost Private Cloud --> " + fc.privateCloudCost());
@@ -665,7 +667,7 @@ public class FogCloudProject {
         System.out.println("LOCALSERVER_MAINTANANCE_COST_IT_MAN : " + FitnessCalculator.LOCALSERVER_MAINTANANCE_COST_IT_MAN);
         System.out.println("LOCALSERVER_PURCHASE_COST : " + FitnessCalculator.LOCALSERVER_PURCHASE_COST);
         System.out.println("");
-        System.out.println("PRIVATE CLOUD COST FORMULA -->PRIVATE CLOUD SERVERS * (LOCALSERVER_MAINTANANCE_COST_ENERGY + 2 * LOCALSERVER_MAINTANANCE_COST_IT_MAN + LOCALSERVER_PURCHASE_COST");
+//        System.out.println("PRIVATE CLOUD COST FORMULA -->PRIVATE CLOUD SERVERS * (LOCALSERVER_MAINTANANCE_COST_ENERGY + 2 * LOCALSERVER_MAINTANANCE_COST_IT_MAN + LOCALSERVER_PURCHASE_COST");
 
         System.out.println("");
         System.out.println("Utilization Penalty --> " + fc.utilPenalty);
@@ -676,9 +678,8 @@ public class FogCloudProject {
         System.out.println("BETA1 --> " + FitnessCalculator.BETA1);
         System.out.println("BETA2 --> " + FitnessCalculator.BETA2);
 
-        System.out.println("FITNESS FORMULA --> cloudCost + privateCloudCost + BETA1 * utilizationPenalty() + BETA2 * (MemoryPenalty + HardVmPenalty + CommunicationPenalty");
+//        System.out.println("FITNESS FORMULA --> cloudCost + privateCloudCost + BETA1 * utilizationPenalty() + BETA2 * (MemoryPenalty + HardVmPenalty + CommunicationPenalty");
 //        System.out.println("Cost Cloud --> " + fc.containerReplacement.getTotalCost());
-        System.out.println("Instances on Cloud --> " + fc.containerReplacement.vmOnClouds.size());
         int fogCount = 0;
         for (int i = 0; i < fc.noFogDevices; i++) {
             for (int j = 0; j < fc.replaceVM.length; j++) {
@@ -690,7 +691,7 @@ public class FogCloudProject {
 
         }
         double temps = fogCount * 100 / fc.noFogDevices;
-        System.out.println("Used fog nodes / All fog nodes --> " + temps + "%");
+        System.out.println("Number of Used fog nodes over All fog nodes --> " + temps + "%");
     }
 
 }
