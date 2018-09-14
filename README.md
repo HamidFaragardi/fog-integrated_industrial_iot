@@ -20,11 +20,11 @@ Fitness Value shows the total execution cost of applications if there is no pena
 
 Number 0 to 9 correspond fog nodes , 'c' correspond Cloud and 'pc' corresponds Private Cloud. 
 
-For example the first vm is assigned to fog node number 6 and the second vm is assigned to the Private cloud. 
-
 ```
 Allocation --> [6, pc, pc, 9, 6, 3, pc, 8, pc, pc, pc, 9, pc, pc, 3, 8, 7, pc, 4, pc, 1, pc, pc, pc, pc, pc, 4, pc, pc, 5, pc, 0, pc, 5, pc, pc, pc, pc, pc, pc, pc, 1, pc, pc, 9, pc, 4, pc, pc, pc, pc, pc, 5, pc, pc, 2, pc, pc, pc, 6, pc, pc, pc, pc, pc, pc, pc, 2, pc, pc, pc, pc, pc, pc, pc, pc, pc, pc, pc, pc, pc, pc, pc, pc, pc, 1, pc, pc, 7, pc, pc, pc, pc, pc, pc, pc, pc, pc, pc, pc, pc, pc, pc, pc, pc, 8, pc, pc, pc, pc, pc, pc, pc, pc, pc, pc, pc, pc, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, 9, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, 6, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c]
 ```
+For example, the first VM is assigned to fog node number 6 and the second vm is assigned to the Private cloud. 
+
 
 Cost Cloud = VM_CONSTANT_COST + VM_NETWORK_COST + Container_COST 
 
