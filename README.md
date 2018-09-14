@@ -19,12 +19,14 @@ Fitness Value shows the total execution cost of applications if there is no pena
 
 ```Fitness --> 1029.9482```
 
-```Number of Generated VMs --> 288```
 Numbers 0-9 corresponds fog nodes , c corresponds Cloud and pc corresponds Private Cloud. 
+
 ```
 Allocation --> [6, pc, pc, 9, 6, 3, pc, 8, pc, pc, pc, 9, pc, pc, 3, 8, 7, pc, 4, pc, 1, pc, pc, pc, pc, pc, 4, pc, pc, 5, pc, 0, pc, 5, pc, pc, pc, pc, pc, pc, pc, 1, pc, pc, 9, pc, 4, pc, pc, pc, pc, pc, 5, pc, pc, 2, pc, pc, pc, 6, pc, pc, pc, pc, pc, pc, pc, 2, pc, pc, pc, pc, pc, pc, pc, pc, pc, pc, pc, pc, pc, pc, pc, pc, pc, 1, pc, pc, 7, pc, pc, pc, pc, pc, pc, pc, pc, pc, pc, pc, pc, pc, pc, pc, pc, 8, pc, pc, pc, pc, pc, pc, pc, pc, pc, pc, pc, pc, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, 9, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, 6, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c, c]
 ```
+
 Cost Cloud = VM_CONSTANT_COST + VM_NETWORK_COST + Container_COST 
+
 ```
 Cost Cloud --> 4.158200000000001
 0.138 + 2.08 + 1.940200000000001 +  = 4.158200000000001
